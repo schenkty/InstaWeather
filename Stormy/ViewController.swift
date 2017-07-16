@@ -45,7 +45,14 @@ class ViewController: UIViewController {
     @IBAction func getCurrentWeather() {
         toggleRefreshAnimation(on: true)
         determineMyCurrentLocation()
-        getAddressFromGeocodeCoordinate(locationObj: locationManager.location!)
+        
+        guard let location = locationManager.location else {
+            showAlert(title: "Location Not Available")
+            self.toggleRefreshAnimation(on: false)
+            return
+        }
+        
+        getAddressFromGeocodeCoordinate(locationObj: location)
         
         // MARK: Adjust cords here. pls update with user's loc and loc name
         let cordinate = Cordinate(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
