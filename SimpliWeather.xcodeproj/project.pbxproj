@@ -43,7 +43,7 @@
 		106809941F1AB3E300D7F52F /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
 		106809971F1AB57D00D7F52F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		106809991F1AB66300D7F52F /* Cordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cordinate.swift; sourceTree = "<group>"; };
-		975DC4421E550B8100D92F5B /* InstaWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		975DC4421E550B8100D92F5B /* SimpliWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpliWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		975DC4451E550B8100D92F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		975DC4471E550B8100D92F5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		975DC44A1E550B8100D92F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		975DC4391E550B8100D92F5B = {
 			isa = PBXGroup;
 			children = (
-				975DC4441E550B8100D92F5B /* Stormy */,
+				975DC4441E550B8100D92F5B /* Weather */,
 				975DC4431E550B8100D92F5B /* Products */,
 				106809961F1AB57C00D7F52F /* Frameworks */,
 			);
@@ -87,12 +87,12 @@
 		975DC4431E550B8100D92F5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				975DC4421E550B8100D92F5B /* InstaWeather.app */,
+				975DC4421E550B8100D92F5B /* SimpliWeather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		975DC4441E550B8100D92F5B /* Stormy */ = {
+		975DC4441E550B8100D92F5B /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 				975DC4451E550B8100D92F5B /* AppDelegate.swift */,
@@ -110,15 +110,15 @@
 				106809991F1AB66300D7F52F /* Cordinate.swift */,
 				104E9F3E1F1BC27100A9C687 /* LocationHelper.swift */,
 			);
-			path = Stormy;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		975DC4411E550B8100D92F5B /* InstaWeather */ = {
+		975DC4411E550B8100D92F5B /* SimpliWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 975DC4541E550B8100D92F5B /* Build configuration list for PBXNativeTarget "InstaWeather" */;
+			buildConfigurationList = 975DC4541E550B8100D92F5B /* Build configuration list for PBXNativeTarget "SimpliWeather" */;
 			buildPhases = (
 				975DC43E1E550B8100D92F5B /* Sources */,
 				975DC43F1E550B8100D92F5B /* Frameworks */,
@@ -129,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = InstaWeather;
+			name = SimpliWeather;
 			productName = Stormy;
-			productReference = 975DC4421E550B8100D92F5B /* InstaWeather.app */;
+			productReference = 975DC4421E550B8100D92F5B /* SimpliWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 975DC43D1E550B8100D92F5B /* Build configuration list for PBXProject "InstaWeather" */;
+			buildConfigurationList = 975DC43D1E550B8100D92F5B /* Build configuration list for PBXProject "SimpliWeather" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -164,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				975DC4411E550B8100D92F5B /* InstaWeather */,
+				975DC4411E550B8100D92F5B /* SimpliWeather */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8AYF758EP8;
-				INFOPLIST_FILE = Stormy/Info.plist;
+				INFOPLIST_FILE = Weather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.weather;
@@ -334,7 +334,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8AYF758EP8;
-				INFOPLIST_FILE = Stormy/Info.plist;
+				INFOPLIST_FILE = Weather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.weather;
@@ -346,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		975DC43D1E550B8100D92F5B /* Build configuration list for PBXProject "InstaWeather" */ = {
+		975DC43D1E550B8100D92F5B /* Build configuration list for PBXProject "SimpliWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				975DC4521E550B8100D92F5B /* Debug */,
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		975DC4541E550B8100D92F5B /* Build configuration list for PBXNativeTarget "InstaWeather" */ = {
+		975DC4541E550B8100D92F5B /* Build configuration list for PBXNativeTarget "SimpliWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				975DC4551E550B8100D92F5B /* Debug */,
